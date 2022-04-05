@@ -6,15 +6,95 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Condensed&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Main css -->
     <link rel="stylesheet" href="/styles.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>
-        Hello World
-    </h1>
-    <img src="/assets/images/cat.jpeg" alt="" width="300">
-
+    <div class="login-form-wrapper">
+        <form class="login-form" action="#">
+            <label class="login-form__label">Login
+                <input class="login-form__input" type="text" placeholder="Your login" required>
+            </label>
+            <label class="login-form__label">Password
+                <input class="login-form__input" type="password" placeholder="Your password" required>
+            </label>
+            <div class="login-form__checkbox">
+                <label class="login-form__switch">
+                    <input class="login-form__switch--input" type="checkbox">
+                    <span class="login-form__switch--slider"></span>
+                </label>
+                <p class="login-form__switch--text">
+                    Subscribe to News
+                </p>
+            </div>
+            <button class="login-form__btn btn">
+                Sign In
+            </button>
+            <a class="login-form__forgot" href="#">
+                Forgot your password?
+            </a>
+            <div class="login-form__social">
+                <p class="login-form__social-text">
+                    or continue with
+                </p>
+                <div class="login-form__social-links">
+                    <a class="login-form__social-link" href="#">
+                        <span class="login-form__social-link-wrapper login-form__social-link-wrapper--google">
+                            <i class="fa-brands fa-google"></i>
+                        </span>
+                    </a>
+                    <a class="login-form__social-link" href="#">
+                        <span class="login-form__social-link-wrapper login-form__social-link-wrapper--fb">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="quest-form-wrapper">
+        <form class="quest-form" action="#">
+            <h2 class="quest-form__title">
+                Contact Us
+            </h2>
+            <div class="quest-form__wrapper">
+                <label class="quest-form__label">Name
+                    <input class="quest-form__input" placeholder="Your name" type="text" required>
+                </label>
+                <label class="quest-form__label">Surname
+                    <input class="quest-form__input" placeholder="Your surname" type="text" required>
+                </label>
+            </div>
+            <div class="quest-form__wrapper">
+                <label class="quest-form__label">E-mail
+                    <input class="quest-form__input" placeholder="Your E-mail" type="email" required>
+                </label>
+                <label class="quest-form__label">Phone
+                    <input class="quest-form__input" placeholder="Your phone number" type="number" required>
+                </label>
+            </div>
+            <label class="quest-form__checkbox-wrapper">
+                <input class="quest-form__checkbox" type="checkbox">
+                <span class="quest-form__checkmark"></span>
+                <p class="quest-form__checkbox-text">Subscribe to News</p>
+            </label>
+            <div class="quest-form__wrapper quest-form__wrapper--full">
+                <label class="quest-form__label">Your message
+                    <textarea class="quest-form__input quest-form__input--message" placeholder="Type Message" type="text" required></textarea>
+                </label>
+            </div>
+            <button class="quest-form__btn btn">
+                Submit
+            </button>
+        </form>
+    </div>
 
     <script src="/scripts.js"></script>
 </body>
