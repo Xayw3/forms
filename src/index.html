@@ -95,6 +95,161 @@
             </button>
         </form>
     </div>
+    <div class="contact">
+        <div class="contact__information">
+            <h5 class="contact__title">
+                Contact Information
+            </h5>
+            <p class="contact__text">
+                Here’s some additional support text to help set user expectations. 
+            </p>
+            <div class="contact__links">
+                <a class="contact__link" href="tel:1234567890">
+                    <img class="contact__link-img" src="../assets/images/Phone.svg" alt="Phone">
+                    <p>123-456-7890</p>
+                </a>
+                <a class="contact__link" href="mailto:support@minerva.com">
+                    <img class="contact__link-img" src="../assets/images/Mail.svg" alt="">
+                    <p>support@minerva.com</p>
+                </a>
+            </div>
+        </div>
+        <form class="contact-form" action="#"> 
+            <h2 class="contact-form__title">
+                Contact Us
+            </h2>
+            <div class="contact-form__wrapper">
+                <label class="contact-form__label">Name
+                    <input class="contact-form__input" type="text" placeholder="Your name" required>
+                </label>
+                <label class="contact-form__label">E-mail
+                    <input class="contact-form__input" type="email" placeholder="Your email" required>
+                </label>
+            </div>
+            <div class="contact-form__wrapper">
+                <label class="contact-form__label">Country
+                    <select class="contact-form__input" type="select" placeholder="Your name" required>
+                        <option value="Latvia">Latvia</option>
+                        <option value="Lithuania">Lithuania</option>
+                        <option value="Estonia">Estonia</option>
+                    </select> 
+                </label>
+                <label class="contact-form__label">City
+                    <select class="contact-form__input" type="select" placeholder="Your email" required>
+                        <option value="Daugavpils">Daugavpils</option>
+                        <option value="Liepaja">Liepaja</option>
+                        <option value="Jelgava">Jelgava</option>
+                        <option value="Riga">Riga</option>
+                        <option value="Vilnius">Vilnius</option>
+                        <option value="Kaunas">Kaunas</option>
+                        <option value="Klaipėda">Klaipėda</option>
+                        <option value="Tallinn">Tallinn</option>
+                        <option value="Tartu">Tartu</option>
+                        <option value="Narva">Narva</option>
+                    </select>
+                </label>
+            </div>
+            <div class="contact-form__wrapper contact-form__wrapper--full">
+                <label class="contact-form__label">Adress
+                    <input class="contact-form__input" type="text" placeholder="Enter your adress" required>
+                </label>
+            </div>
+            <div class="contact-form__wrapper contact-form__wrapper--full">
+                <label class="contact-form__label">Message
+                    <textarea class="contact-form__input contact-form__input--message" type="text" placeholder="Type Message"></textarea>
+                </label>
+            </div>
+            <button class="contact-form__btn btn">
+                Submit
+            </button>
+        </form>
+    </div>
+    <form class="checkout" action="#">
+        <h2 class="checkout__title">
+            Checkout
+        </h2>
+        <div class="checkout__info">
+            <div class="checkout__order">
+                <h4 class="checkout__info-title">
+                    Your Order
+                </h4>
+                <div class="checkout__item">
+                    <p class="checkout__item-name">
+                        Eggshell Plant Pot
+                    </p>
+                    <div class="checkout__item-wrapper">
+                        <span>
+                            Size:
+                        </span>
+                        <span class="checkout__item-size">
+                            Medium
+                        </span>
+                    </div>
+                    <div class="checkout__item-wrapper">
+                        <span>
+                            Qty:
+                        </span>
+                        <span class="checkout__item-qty">
+                            1
+                        </span>
+                    </div>
+                    <div class="checkout__item-wrapper">
+                        <span class="checkout__item-price">
+                            $25.00
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout__delivery">
+                <h4 class="checkout__info-title">
+                    Delivery Details
+                </h4>
+                <div class="checkout__delivery-info">
+                    <div class="checkout__delivery-person">
+                        <p class="checkout__delivery-name">
+                            Adam Sandler
+                        </p>
+                        <p class="checkout__delivery-street">
+                            1234 Fake St
+                        </p>
+                        <p class="checkout__delivery-adress">
+                            Milwaukee, WI 53203
+                        </p>
+                    </div>
+                    <div class="checkout__delivery-shipping">
+                        <p class="checkout__delivery-name">
+                            Shipping Speed
+                        </p>
+                        <p class="checkout__delivery-shipping-price">
+                            $7.00 No Rush Shipping
+                        </p>
+                        <p class="checkout__delivery-arrives">
+                            Arrives by 1/16/22
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="checkout__payment">
+            <h4 class="checkout__info-title">
+                Payment Method
+            </h4>
+            <div class="checkout__form">
+                <label class="checkout__label">Enter your card number
+                    <input class="checkout__input" type="text" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+                </label>
+                <label class="checkout__label">Card end date
+                    <input class="checkout__input" type="month" placeholder="2023/08" required>
+                </label>
+                <label class="checkout__label checkout__label--min">cvc
+                    <input class="checkout__input checkout__input--btn" type="number" placeholder="CVC" required>
+                </label>
+            </div>
+        </div>
+        <button class="checkout__btn btn">
+            Continue
+        </button>
+    </form>
 
     <script src="/scripts.js"></script>
 </body>
