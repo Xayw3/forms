@@ -70,13 +70,13 @@
 }
 
 .login-form__forgot {
-    color: #651FFF;
+    color: var(--links);
     margin: 12px auto;
-    border-bottom: 1px solid #651FFF;
+    border-bottom: 1px solid var(--links);
 }
 
 .login-form__social {
-    border-top: 2px solid #ECECEE;
+    border-top: 2px solid var(--line);
     padding-top: 32px;
 }
 
@@ -91,10 +91,11 @@
 }
 
 .login-form__social-link {
-    color: #000;
+    color: var(--social-link-color);
     padding: 12px 75px;
-    border: 1px solid #ECECEE;
+    border: 1px solid var(--social-link-border);
     border-radius: 5px;
+    background-color: var(--social-link-bg);
 }
 
 .login-form__social-link-wrapper {
@@ -107,6 +108,6 @@
 }
 
 .login-form__social-link-wrapper--fb {
-    background-color: #000;
-    color: #fff;
+    background-color: var(--social-link-circle);
+    color: var(--social-link-color--fb);
 }

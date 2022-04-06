@@ -35,7 +35,7 @@
 
 .checkout__delivery-name {
     font-size: 16px;
-    color: #130F1C;
+    color: var(--text-color);
 }
 
 .checkout__delivery-shipping {
@@ -77,4 +77,12 @@
 
 .checkout__input--btn {
     max-width: 138px;
+}
+
+.checkout__input--date::-webkit-calendar-picker-indicator {
+    filter: var(--date-icon);
+}
+
+.checkout__input--date {
+    color: var(--placeholders);
 }

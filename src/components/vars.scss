@@ -1,6 +1,6 @@
 %form {
     padding: 32px;
-    background-color: #fff;
+    background-color: var(--form-bg);
     display: flex;
     flex-direction: column;
     margin: 20px auto;
@@ -11,7 +11,7 @@
 
 %input {
     padding: 12px;
-    background-color: #FAFAFA;
+    background-color: var(--input-bg);
     margin-top: 4px;
     border-radius: 5px;
 }

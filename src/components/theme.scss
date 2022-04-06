@@ -1,0 +1,31 @@
+html[data-theme="light"]  {
+    --bg-color: #FAFAFA;
+    --form-bg: #fff;
+    --text-color: #130F1C;
+    --placeholders: #BAB9BD;
+    --links: #651FFF;
+    --input-bg: #FAFAFA;
+    --line: #ECECEE;
+    --social-link-color: #000;
+    --social-link-color--fb: #fff;
+    --social-link-border: #ECECEE;
+    --social-link-circle: #000;
+    --social-link-bg: transparent;
+    --date-icon: invert(0);
+}
+
+html[data-theme="dark"] {
+    --bg-color: #130F1C;
+    --form-bg: #1F1B29;
+    --text-color: #BAB9BD;
+    --placeholders: #99969E;
+    --links: #BAB9BD;
+    --input-bg: #2E2A36;
+    --line: #635F6B;
+    --social-link-color: #fff;
+    --social-link-color--fb: #000;
+    --social-link-border: transparent;
+    --social-link-circle: #fff;
+    --social-link-bg: #2E2A36;
+    --date-icon: invert(1);
+}
